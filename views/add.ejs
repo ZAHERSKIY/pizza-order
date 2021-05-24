@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Пиццерия</title>
+    <link rel="stylesheet" href="/public/css/style.css">
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  
+  <!-- Основное -->
+  <div class="container">
+   <h1>Меню:</h1>
+   <div class="menu">
+       <% for(let i=0; i<data.length; i++) { %>
+           <a href="#popup_<%= data[i].id %>" class="popup-link">
+        <div class="pizza-info" id="<%= data[i].id %>wrap">
+            <h3><%= data[i].display_name %></h3>
+            <img src="<%= data[i].image %>" alt="">
+            <h3 class="price"><%= data[i].price %> рублей</h3>
+            <div id="popup_<%= data[i].id %>" class="popup">
+                <div class="popup_body">
+                    <div class="popup_content">
+                        <a href="" class="popup_close close-popup">❌</a>
+                        <form method="post" action="/add">
+                        <h3 class="formname"><%= data[i].display_name %></h3>
+                        <h4>Состав: <%= data[i].sostav %></h4>
+                        <h3>Доп. ингридиенты:</h3>
+                        <% for(let k=0; k<data[i].dops.length; k++) { %>
+                        <label class="dopslabel" for="dops">
+                            <br><%= data[i].dops[k].name %> <p class="worth"> <b><%= data[i].dops[k].price %> </b></p></label>
+                        <input class="dopsbox" type="checkbox" name="dops" value="<%= data[i].dops[k].price %>" onClick="calculate(this);">
+                        <% } %>
+                        <h4>Цена: <%= data[i].price %> </h4>
+                        <h4>Допы: <span class="sum">0 </span></h4>
+                          <label class="hide-block" for="pizzaname">Адрес</label>
+                           <input class="hide-block" type="text" name="pizzaname" value="<%= data[i].display_name %>">
+                           <label class="hide-block" for="price">Адрес</label>
+                           <input class="hide-block" type="text" name="price" value="<%= data[i].price %>">
+                            <label for="adres">Адрес</label>
+                            <input name="adres" type="text">
+                            <label for="name">Имя</label>
+                            <input name="name" type="text">
+                            <label for="phone">Номер телефона</label>
+                            <input name="phone" type="text">
+                            <button type="submit">Заказать</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </a>
+    
+    <% } %>
+    
+</div>
+</div>
+    <script>
+        var total = 0;
+
+        function calculate(item) {
+            var sums = document.getElementsByClassName('sum');
+            console.log(sums)
+            if (item.checked) {
+                total += parseInt(item.value);
+            } else {
+                total -= parseInt(item.value);
+            }
+            for (var i = 0; i < sums.length; ++i) {
+                document.getElementsByClassName('sum')[i].innerHTML = total;
+            }
+
+        }
+
+        
+        const popupLinks = document.querySelectorAll('.popup-link');
+        const body = document.querySelector('body');
+        const lockPadding = document.querySelectorAll('.lock-padding');
+
+        let unlock = true;
+
+        if (popupLinks.length > 0) {
+            for (let index = 0; index < popupLinks.length; index++) {
+                const popupLink = popupLinks[index];
+                popupLink.addEventListener('click', function(e) {
+                    const popupName = popupLink.getAttribute('href').replace('#', '');
+                    const currentPopup = document.getElementById(popupName);
+                    popupOpen(currentPopup);
+                    e.preventDefault();
+                });
+            }
+        }
+
+        const popupCloseIcon = document.querySelectorAll('.close-popup');
+        if (popupCloseIcon > 0) {
+            for (let index = 0; index < popupCloseIcon.length; index++) {
+                const el = popupCloseIcon[index];
+                el.addEventListener('click', function(e) {
+                    popupClose(el.closest('.popup'));
+                    e.preventDefault();
+                });
+            }
+        }
+
+        function popupOpen(currentPopup) {
+            if (currentPopup && unlock) {
+                const popupActive = document.querySelector('.popup.open');
+                if (popupActive) {
+                    popupClose(popupActive, false);
+                }
+                currentPopup.classList.add('open');
+                currentPopup.addEventListener('click', function(e) {
+                    if (!e.target.closest('.popup_content')) {
+                        popupClose(e.target.closest('.popup'));
+                    }
+                });
+            }
+        }
+
+    </script>
+</body>
+
+</html>

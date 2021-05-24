@@ -1,0 +1,134 @@
+[{
+    "display_name": "Пепперони",
+    "id":"1",
+    "price": "375",
+    "image" : "https://dodopizza-a.akamaihd.net/static/Img/Products/5dffe4c7d3bc49668f50c1d08d920992_292x292.jpeg",
+    "sostav" : "Пепперони, моцарелла, томатный соус",
+    "dops":[
+    {"name": "Халапеньо", "price": "59 рублей"},
+    {"name": "Грибы", "price": "39 рублей"},
+    {"name": "Сыр блю чиз","price": "59 рублей"}]
+},
+ {
+    "display_name": "4 сыра",
+    "id":"2",
+    "price": "425",
+    "image" : "https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/6e43027b-4b8e-486f-9324-830ebcaceb71.jpg",
+    "sostav" : "Моцарелла, сыры чеддер и пармезан, сыр блю чиз, сливочный соус",
+    "dops":[
+    {"name": "Томаты", "price": "39 рублей"},
+    {"name": "Ветчина", "price": "39 рублей"},
+    {"name": "Брынза","price": "59 рублей"}]
+}
+ ,
+ {
+    "display_name": "Цыплёнок",
+    "id":"3",
+    "price": "425",
+    "image" : "https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/2822916b-039c-4dfc-916a-73ca0daa9320.jpg",
+    "sostav" : "Цыпленок, ветчина, соус ранч, моцарелла, томаты, чеснок",
+    "dops":[
+    {"name": "Моцарелла", "price": "59 рублей"},
+    {"name": "Ветчина", "price": "39 рублей"},
+    {"name": "Чеддер","price": "59 рублей"}]
+},
+ {
+    "display_name": "4 сезона",
+    "id":"4",
+    "price": "375",
+    "image" : "https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/6d4e1c2c-1c81-40c6-95d9-0d19afcebcb5.jpg",
+    "sostav" : "Моцарелла, ветчина, пепперони, кубики брынзы, томаты, шампиньоны, томатный соус, итальянские травы.",
+    "dops":[
+    {"name": "Чеддер", "price": "59 рублей"},
+    {"name": "Брынза", "price": "59 рублей"},
+    {"name": "Томаты","price": "39 рублей"}]
+},
+ {
+    "display_name": "Мясная",
+    "id":"5",
+    "price": "425",
+    "image" : "https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/462796e6-a697-4dc6-8d7a-9dafbba7f8d5.jpg",
+    "sostav" : "Цыпленок, ветчина, пепперони, томатный соус, острая чоризо, моцарелла",
+    "dops":[
+    {"name": "Пепперони", "price": "59 рублей"},
+    {"name": "Ветчина", "price": "39 рублей"},
+    {"name": "Острая чоризо","price": "59 рублей"}]
+},
+ {
+    "display_name": "Ветчина и сыр",
+    "id":"6",
+    "price": "500",
+    "image" : "https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/679924dc-e4fd-45fd-aceb-be139f265425.jpg",
+    "sostav" : "Ветчина, моцарелла, соус альфредо",
+    "dops":[
+    {"name": "Чеддер", "price": "59 рублей"},
+    {"name": "Грибы", "price": "39 рублей"},
+    {"name": "Брынза","price": "59 рублей"}]
+},
+ {
+    "display_name": "Мексиканская",
+    "id":"7",
+    "price": "425",
+    "image" : "https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/dc5dc4e9-932a-4abf-9472-dfb6326ea9ee.jpg",
+    "sostav" : "Острый цыпленок, томатный соус, сладкий перец, красный лук, моцарелла, острый перец халапеньо, томаты, соус сальса",
+    "dops":[
+    {"name": "Острый цыплёнок", "price": "59 рублей"},
+    {"name": "Моцарелла", "price": "59 рублей"},
+    {"name": "Чеддер","price": "59 рублей"}]
+},
+ {
+    "display_name": "Двойная пепперони",
+    "id":"8",
+    "price": "425",
+    "image" : "https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/9c046e19-b7a6-47f5-b2be-91bb9d77a74b.jpg",
+    "sostav" : "Пикантная пепперони, увеличенная порция моцареллы, томатный соус",
+    "dops":[
+    {"name": "Сыр блю чиз", "price": "59 рублей"},
+    {"name": "Грибы", "price": "39 рублей"},
+    {"name": "Халапеньо","price": "59 рублей"}]
+},
+ {
+    "display_name": "Маргарита",
+    "id":"9",
+    "price": "325",
+    "image" : "https://dodopizza-a.akamaihd.net/static/Img/Products/e8a8ded1f8154d11ab5065dc5208b187_292x292.jpeg",
+    "sostav" : "Увеличенная порция моцареллы, томаты, итальянские травы, томатный соус",
+    "dops":[
+    {"name": "Брынза", "price": "59 рублей"},
+    {"name": "Халапеньо", "price": "59 рублей"},
+    {"name": "Чеддер","price": "59 рублей"}]
+},
+ {
+    "display_name": "Пепперони фреш",
+    "id":"10",
+    "price": "500",
+    "image" : "https://dodopizza-a.akamaihd.net/static/Img/Products/5dffe4c7d3bc49668f50c1d08d920992_292x292.jpeg",
+    "sostav" : "Пикантная пепперони, увеличенная порция моцареллы, томаты, томатный соус",
+    "dops":[
+    {"name": "Пепперони", "price": "59 рублей"},
+    {"name": "Томаты", "price": "39 рублей"},
+    {"name": "Халапеньо","price": "59 рублей"}]
+},
+{
+    "display_name": "Гавайская",
+    "id":"11",
+    "price": "375",
+    "image" : "https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/d640c5fb-0944-4123-9363-c5706c725546.jpg",
+    "sostav" : "Цыпленок, томатный соус, моцарелла, ананасы",
+    "dops":[
+    {"name": "Ветчина", "price": "59 рублей"},
+    {"name": "Халапеньо", "price": "39 рублей"},
+    {"name": "Моцарелла","price": "59 рублей"}]
+},
+{
+    "display_name": "Супермясная",
+    "id":"12",
+    "price": "465",
+    "image" : "https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/8b052931-395f-4b38-8af0-55f6fbd7c9e5.jpg",
+    "sostav" : "Цыпленок, митболы из говядины, пикантная пепперони, томатный соус, острая чоризо, моцарелла, бекон",
+    "dops":[
+    {"name": "Томаты", "price": "59 рублей"},
+    {"name": "Халапеньо", "price": "39 рублей"},
+    {"name": "Моцарелла","price": "59 рублей"}]
+}
+]

@@ -1,0 +1,132 @@
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.pizza-info {
+    width: 100%;
+}
+
+.price {
+    padding-bottom: 40px;
+}
+
+
+.popup-link {
+    text-align: center;
+    float: left;
+    border-radius: 5px;
+    display: block;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+.formname{
+    text-align: center;
+}
+.menu {
+    margin: 0 auto;
+}
+
+
+.imgform {
+    display: block;
+    float:left;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif; 
+    margin: 0px;
+}
+
+.dopslabel {
+    width: 100px;
+    height: 100px;
+    display: block;
+    
+}
+
+label {
+    display: block;
+}
+input {
+    margin: 10px 0px;
+    display: block;
+}
+
+h3 {
+    padding: 0px;
+    margin: 0px;
+}
+input {
+    height: 30px;
+    width: 250px;
+}
+button {
+    height: 30px;
+    width: 100px;
+}
+
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+img {
+    max-width: 150px;
+    margin: 10px;
+}
+/* POPUP */
+
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  display: none;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.popup.open {
+  display: block;
+}
+
+.popup-body {
+  min-height: 100%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 10px;
+}
+
+.popup_content {
+  background-color: white;
+  color: black;
+  max-width: 300px;
+  padding: 30px;
+  position: relative;
+  border-radius: 10px;
+margin: 0 auto;
+}
+
+.popup_title {
+  margin: 0px 0px 1em 0px;
+}
+
+.popup_close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 20px;
+  color: black;
+}
+
+.hide-block {
+    display: none;
+}
